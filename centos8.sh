@@ -54,7 +54,7 @@ setgid 65535
 setuid 65535
 stacksize 6291456 
 flush
-auth none
+auth iponly
 EOF
 }
 
