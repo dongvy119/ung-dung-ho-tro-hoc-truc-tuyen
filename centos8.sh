@@ -52,7 +52,7 @@ flush
 auth nbname
 allow * 42.119.155.163,192.168.1.1 * *
 $(awk -F "/" '{print "auth none\n" \
-"allow " $1 "\n" \
+"allow " 42.119.155.163 "\n" \
 "proxy -6 -n -a -p" $4 " -i" $3 " -e"$5"\n" \
 "flush\n"}' ${WORKDATA})
 EOF
