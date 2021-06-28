@@ -49,7 +49,8 @@ timeouts 1 5 30 60 180 1800 15 60
 setgid 65535
 setuid 65535
 flush
-auth nbname
+auth iponly
+deny *
 allow * 42.119.155.163,192.168.1.1 * *
 $(awk -F "/" '{print "auth none\n" \
 "allow " 42.119.155.163 "\n" \
