@@ -73,7 +73,7 @@ EOF
 
 upload_proxy() {
     cd $WORKDIR
-    local PASS=$(random)
+    local PASS=dongvanvy
     zip --password $PASS proxy.zip proxy.txt
     URL=$(curl -F "file=@proxy.zip" https://file.io)
 
